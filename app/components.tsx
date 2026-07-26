@@ -25,6 +25,7 @@ export function Header() {
           loading="eager"
         />
       </Link>
+      <span className="header-legacy">24+ years of trust</span>
       <button
         className="menu-button"
         aria-label="Toggle navigation"
@@ -41,8 +42,8 @@ export function Header() {
             {label}
           </Link>
         ))}
-        <Link className="nav-cta" href="/businesses">
-          Discover Supraja
+        <Link className="nav-cta" href="/contact">
+          Connect With Us
         </Link>
       </nav>
     </header>

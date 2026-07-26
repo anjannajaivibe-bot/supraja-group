@@ -48,14 +48,14 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Supraja Group</p>
+          <p className="eyebrow">Established 2003 · Hyderabad</p>
           <h1>
-            Progress Across Businesses.{" "}
-            <span>Purpose Across Generations.</span>
+            Building value.<br />
+            <span>Shaping generations.</span>
           </h1>
           <p className="lead">
-            Building trusted businesses that create lasting value for people,
-            places and communities.
+            A diversified group creating enduring value across real estate,
+            food and tradition, hospitality, and community development.
           </p>
           <div className="actions">
             <Link className="button primary" href="/businesses">
@@ -66,23 +66,23 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-mosaic" aria-label="Supraja Group business sectors">
-          <div className="mosaic-panel panel-real">
-            <span>Building places for growth</span>
-          </div>
-          <div className="mosaic-panel panel-food">
-            <span>Celebrating authentic heritage</span>
-          </div>
-          <div className="mosaic-panel panel-hotel">
-            <span>Creating memorable stays</span>
-          </div>
-          <div className="mosaic-panel panel-care">
-            <span>Strengthening communities</span>
+        <div className="hero-visual" aria-label="Supraja Group business portfolio">
+          <img
+            src="/images/portfolio/supraja-iris.webp"
+            alt="Supraja IRIS plotted development by Sri Supraja Infracon"
+            width={1200}
+            height={900}
+            loading="eager"
+          />
+          <div className="hero-visual-caption">
+            <span>Our flagship vision</span>
+            <strong>Supraja IRIS</strong>
+            <small>Real estate shaped around long-term growth</small>
           </div>
         </div>
       </section>
 
-      <section className="business-strip" aria-label="Our businesses">
+      <section className="business-strip" aria-label="Supraja Group sectors">
         {businesses.map((business) => (
           <a
             key={business.name}
@@ -98,6 +98,13 @@ export default function Home() {
         ))}
       </section>
 
+      <section className="group-metrics" aria-label="Supraja Group at a glance">
+        <div><strong>24+</strong><span>Years of legacy</span></div>
+        <div><strong>4</strong><span>Core business sectors</span></div>
+        <div><strong>10+</strong><span>Completed developments</span></div>
+        <div><strong>5000+</strong><span>Families served</span></div>
+      </section>
+
       <section className="section intro-section">
         <div>
           <p className="eyebrow">One Vision, Multiple Ventures</p>
@@ -105,10 +112,10 @@ export default function Home() {
         </div>
         <div>
           <p className="section-copy">
-            Since 2003, Supraja Group has grown by staying close to what matters:
-            dependable execution, long-term relationships and genuine value.
-            Today, our businesses serve customers across real estate,
-            hospitality, food and community initiatives.
+            Since 2003, Supraja Group has grown through dependable execution,
+            enduring relationships and a genuine commitment to value. Each
+            venture serves a distinct need while carrying the same promise:
+            transparent service, responsible growth and trust that lasts.
           </p>
           <Link className="text-link" href="/about">
             Discover our journey <span aria-hidden="true">→</span>
@@ -120,7 +127,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Our Businesses</p>
-            <h2>Distinct ventures. Shared standards.</h2>
+            <h2>One group. Four distinct expressions of trust.</h2>
           </div>
           <p>
             Every Supraja business is shaped by the same commitment to
@@ -157,6 +164,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="leadership-feature">
+        <div className="leadership-feature-image">
+          <img
+            src="/images/tudi-praveen.webp"
+            alt="Tudi Praveen, Chairman and Managing Director of Supraja Group"
+            width={720}
+            height={900}
+            loading="lazy"
+          />
+        </div>
+        <div className="leadership-feature-copy">
+          <p className="eyebrow light">Leadership</p>
+          <blockquote>
+            “Trust is the foundation of every successful enterprise.”
+          </blockquote>
+          <p>
+            Tudi Praveen leads Supraja Group with a long-term perspective,
+            disciplined execution and an unwavering commitment to customers
+            and communities.
+          </p>
+          <Link className="button light-button" href="/leadership">
+            Read the Chairman&apos;s Message <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </section>
+
       <section className="section brands-section">
         <div className="section-heading brands-heading">
           <div>
@@ -187,13 +220,13 @@ export default function Home() {
 
       <section className="legacy">
         <div>
-          <p className="eyebrow light">Our Foundation</p>
-          <h2>Progress is meaningful when it improves lives.</h2>
+          <p className="eyebrow light">Purpose Beyond Business</p>
+          <h2>Progress becomes meaningful when it improves lives.</h2>
         </div>
         <div className="legacy-points">
-          <div><strong>2003</strong><span>Our journey began</span></div>
-          <div><strong>4</strong><span>Core business sectors</span></div>
-          <div><strong>1</strong><span>Shared commitment to trust</span></div>
+          <div><strong>People</strong><span>Supporting opportunity</span></div>
+          <div><strong>Places</strong><span>Creating lasting value</span></div>
+          <div><strong>Future</strong><span>Growing responsibly</span></div>
         </div>
       </section>
 
