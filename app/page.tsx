@@ -66,19 +66,47 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-visual" aria-label="Supraja Group business portfolio">
-          <img
-            src="/images/portfolio/supraja-iris.webp"
-            alt="Supraja IRIS plotted development by Sri Supraja Infracon"
-            width={1200}
-            height={900}
-            loading="eager"
-          />
-          <div className="hero-visual-caption">
-            <span>Our flagship vision</span>
-            <strong>Supraja IRIS</strong>
-            <small>Real estate shaped around long-term growth</small>
-          </div>
+        <div className="hero-visual" aria-label="An overview of Supraja Group businesses">
+          <figure className="hero-tile hero-tile-estate">
+            <img
+              src="/images/portfolio/supraja-iris.webp"
+              alt="Aerial view of a thoughtfully planned Supraja development"
+              width={900}
+              height={700}
+              loading="eager"
+            />
+            <figcaption>Building places for growth</figcaption>
+          </figure>
+          <figure className="hero-tile hero-tile-tradition">
+            <img
+              src="/images/portfolio/parampara-mithai.webp"
+              alt="Traditional Indian sweets from Parampara Mithai"
+              width={700}
+              height={700}
+              loading="eager"
+            />
+            <figcaption>Celebrating authentic heritage</figcaption>
+          </figure>
+          <figure className="hero-tile hero-tile-hospitality">
+            <img
+              src="/images/portfolio/cyber-view.webp"
+              alt="Supraja Hotels property in Hyderabad"
+              width={900}
+              height={700}
+              loading="eager"
+            />
+            <figcaption>Welcoming every guest</figcaption>
+          </figure>
+          <figure className="hero-tile hero-tile-community">
+            <img
+              src="/images/current-site/foundation.webp"
+              alt="Supraja Foundation supporting the local community"
+              width={700}
+              height={700}
+              loading="eager"
+            />
+            <figcaption>Strengthening communities</figcaption>
+          </figure>
         </div>
       </section>
 
