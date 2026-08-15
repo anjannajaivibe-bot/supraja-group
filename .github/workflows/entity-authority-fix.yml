@@ -1,0 +1,37 @@
+name: Apply entity authority fix
+on:
+  push:
+    branches:
+      - agent/entity-authority-links-2026-08-15
+    paths:
+      - 'scripts/entity-authority.trigger'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Link Supraja IRIS card to official project domain
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('app/businesses/page.tsx')
+          s=p.read_text()
+          s=s.replace('"A resort-style plotted destination with lifestyle attractions and strong growth-corridor connectivity."','"A resort-style plotted destination by Sri Supraja Infracon with lifestyle attractions and strong growth-corridor connectivity."',1)
+          old='href: "https://www.srisuprajainfracon.com/projects/supraja-iris-resort-plots",'
+          if old not in s:
+              raise SystemExit('Expected Supraja IRIS href not found')
+          s=s.replace(old,'href: "https://suprajairis.com/",',1)
+          p.write_text(s)
+          PY
+      - name: Commit production fix and clean tooling
+        run: |
+          rm -f scripts/entity-authority.trigger .github/workflows/entity-authority-fix.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/businesses/page.tsx scripts/entity-authority.trigger .github/workflows/entity-authority-fix.yml
+          git commit -m "seo: strengthen Supraja Group project entity links"
+          git push origin HEAD:agent/entity-authority-links-2026-08-15
