@@ -12,9 +12,9 @@ const projects = [
     name: "Supraja IRIS",
     location: "Kamkole, near Sadashivapet",
     description:
-      "A resort-style plotted destination with lifestyle attractions and strong growth-corridor connectivity.",
+      "A resort-style plotted destination by Sri Supraja Infracon with lifestyle attractions and strong growth-corridor connectivity.",
     image: "/images/portfolio/supraja-iris.webp",
-    href: "https://www.srisuprajainfracon.com/projects/supraja-iris-resort-plots",
+    href: "https://suprajairis.com/",
   },
   {
     name: "Bridge County",
