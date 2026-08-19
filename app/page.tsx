@@ -9,7 +9,7 @@ const businesses = [
     href: "https://www.srisuprajainfracon.com/",
     className: "real-estate",
     logo: "/brand/sri-supraja-infracon.webp",
-    image: "/images/Supraja Infracon Overview.webp",
+    image: "/images/current-site/real-estate.webp",
   },
   {
     number: "02",
@@ -79,8 +79,8 @@ export default function Home() {
           </figure>
           <figure className="hero-tile hero-tile-tradition">
             <img
-              src="/images/portfolio/parampara-mithai.webp"
-              alt="Traditional Indian sweets from Parampara Mithai"
+              src="/images/current-site/parampara.webp"
+              alt="Parampara celebrating Indian food traditions and festive mithai"
               width={700}
               height={700}
               loading="eager"
@@ -89,8 +89,8 @@ export default function Home() {
           </figure>
           <figure className="hero-tile hero-tile-hospitality">
             <img
-              src="/images/portfolio/cyber-view.webp"
-              alt="Supraja Hotels property in Hyderabad"
+              src="/images/portfolio/supraja-residency.webp"
+              alt="Supraja Hotels hospitality property in Hyderabad"
               width={900}
               height={700}
               loading="eager"
@@ -100,7 +100,7 @@ export default function Home() {
           <figure className="hero-tile hero-tile-community">
             <img
               src="/images/current-site/foundation.webp"
-              alt="Supraja Foundation supporting the local community"
+              alt="Supraja Foundation community support initiative"
               width={700}
               height={700}
               loading="eager"
@@ -130,7 +130,7 @@ export default function Home() {
         <div><strong>24+</strong><span>Years of legacy</span></div>
         <div><strong>4</strong><span>Core business sectors</span></div>
         <div><strong>10+</strong><span>Completed developments</span></div>
-        <div><strong>5000+</strong><span>Families served</span></div>
+        <div><strong>10,000+</strong><span>Families served</span></div>
       </section>
 
       <section className="section intro-section">
