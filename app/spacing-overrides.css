@@ -1,0 +1,108 @@
+/* Unified spacing system loaded after the main stylesheet.
+   Keeps the existing visual design while removing excessive vertical whitespace. */
+
+:root {
+  --section-y: clamp(64px, 6vw, 96px);
+  --section-y-compact: clamp(52px, 5vw, 80px);
+  --section-y-hero: clamp(58px, 5.5vw, 88px);
+  --section-x: clamp(20px, 5vw, 72px);
+}
+
+/* Inner-page heroes: About, Businesses, Contact and shared PageHero usage */
+.page-hero {
+  padding-block: var(--section-y-hero) !important;
+  padding-inline: var(--section-x) !important;
+}
+
+.page-hero .eyebrow {
+  margin-bottom: 18px;
+}
+
+.page-hero .lead {
+  margin-top: 22px;
+}
+
+/* General content rhythm */
+.section,
+.content-section,
+.portfolio-section,
+.group-structure,
+.chairman-section,
+.about-legacy,
+.cta-section {
+  padding-block: var(--section-y) !important;
+}
+
+.section,
+.content-section,
+.portfolio-section,
+.group-structure,
+.chairman-section,
+.about-legacy {
+  padding-inline: var(--section-x) !important;
+}
+
+/* Sections that should read as continuations rather than full new chapters */
+.group-metrics {
+  margin-top: clamp(56px, 5vw, 78px) !important;
+  padding-bottom: var(--section-y-compact) !important;
+}
+
+.section-heading {
+  margin-bottom: clamp(36px, 4vw, 52px) !important;
+}
+
+.values-grid {
+  margin-top: clamp(34px, 3.5vw, 48px) !important;
+}
+
+/* Leadership blocks had particularly tall vertical padding */
+.leadership-feature-copy {
+  padding: clamp(52px, 6vw, 88px) var(--section-x) !important;
+}
+
+.leadership-hero {
+  min-height: 420px !important;
+  padding: var(--section-y-hero) var(--section-x) !important;
+}
+
+/* Keep CTA sections intentional without large empty bands */
+.cta-section {
+  padding-inline: var(--section-x) !important;
+}
+
+/* Mobile and tablet spacing */
+@media (max-width: 900px) {
+  :root {
+    --section-y: clamp(48px, 8vw, 68px);
+    --section-y-compact: clamp(42px, 7vw, 58px);
+    --section-y-hero: clamp(46px, 8vw, 64px);
+    --section-x: clamp(18px, 5vw, 28px);
+  }
+
+  .page-hero .lead {
+    margin-top: 18px;
+  }
+
+  .leadership-feature-copy {
+    padding-block: var(--section-y) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --section-y: 46px;
+    --section-y-compact: 38px;
+    --section-y-hero: 44px;
+    --section-x: 20px;
+  }
+
+  .page-hero .eyebrow {
+    margin-bottom: 14px;
+  }
+
+  .section-heading,
+  .values-grid {
+    margin-bottom: 30px !important;
+  }
+}
