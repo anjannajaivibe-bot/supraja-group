@@ -8,20 +8,44 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://suprajagroup.com";
+const siteTitle = "Supraja Group | Progress with Purpose";
+const siteDescription =
+  "Supraja Group builds trusted businesses across real estate, hospitality, food and tradition, and community development.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://suprajagroup.com"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Supraja Group | Progress with Purpose",
+    default: siteTitle,
     template: "%s | Supraja Group",
   },
-  description:
-    "Supraja Group builds trusted businesses across real estate, hospitality, food and tradition, and community development.",
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Supraja Group | Progress with Purpose",
+    title: siteTitle,
     description:
       "Building trusted businesses that create lasting value for people, places and communities.",
+    url: siteUrl,
     type: "website",
     siteName: "Supraja Group",
+    locale: "en_IN",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Supraja Group - Progress with Purpose",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description:
+      "Building trusted businesses that create lasting value for people, places and communities.",
+    images: ["/opengraph-image"],
   },
   icons: {
     icon: "/favicon.svg",
