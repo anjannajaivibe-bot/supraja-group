@@ -9,7 +9,7 @@ const businesses = [
     href: "https://www.srisuprajainfracon.com/",
     className: "real-estate",
     logo: "/brand/sri-supraja-infracon.webp",
-    image: "/images/portfolio/supraja-iris.webp",
+    image: "/images/Supraja Infracon Overview.webp",
   },
   {
     number: "02",
@@ -69,13 +69,13 @@ export default function Home() {
         <div className="hero-visual" aria-label="An overview of Supraja Group businesses">
           <figure className="hero-tile hero-tile-estate">
             <img
-              src="/images/portfolio/supraja-iris.webp"
-              alt="Aerial view of a thoughtfully planned Supraja development"
-              width={900}
-              height={700}
+              src="/images/Supraja Infracon Overview.webp"
+              alt="Sri Supraja Infracon overview featuring major real estate developments"
+              width={1600}
+              height={900}
               loading="eager"
             />
-            <figcaption>Building places for growth</figcaption>
+            <figcaption>Sri Supraja Infracon real estate portfolio</figcaption>
           </figure>
           <figure className="hero-tile hero-tile-tradition">
             <img
