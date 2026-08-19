@@ -60,9 +60,72 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "Supraja Group",
+        url: `${siteUrl}/`,
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/brand/supraja-group.webp`,
+        },
+        description: siteDescription,
+        foundingDate: "2003",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Hyderabad",
+          addressRegion: "Telangana",
+          addressCountry: "IN",
+        },
+        knowsAbout: [
+          "Real estate development",
+          "Hospitality",
+          "Food and traditional sweets",
+          "Community development",
+        ],
+        subOrganization: [
+          {
+            "@type": "Organization",
+            name: "Sri Supraja Infracon",
+            url: "https://www.srisuprajainfracon.com/",
+          },
+          {
+            "@type": "Organization",
+            name: "Supraja Hotels",
+            url: "https://suprajahotels.com/",
+          },
+          {
+            "@type": "Organization",
+            name: "Supraja Foundation",
+          },
+        ],
+        brand: {
+          "@type": "Brand",
+          name: "Supraja Group",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: `${siteUrl}/`,
+        name: "Supraja Group",
+        description: siteDescription,
+        publisher: { "@id": `${siteUrl}/#organization` },
+        inLanguage: "en-IN",
+      },
+    ],
+  };
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <Header />
         {children}
         <Footer />
