@@ -1,0 +1,108 @@
+/* Image framing overrides: preserve important content, reduce accidental cropping,
+   and keep brand/portfolio imagery readable across responsive layouts. */
+
+.hero-tile-estate {
+  background: #f6f8fb;
+}
+
+.hero-tile-estate::after {
+  background: linear-gradient(180deg, rgba(5,18,35,0) 70%, rgba(5,18,35,.72));
+}
+
+.hero-tile-estate img {
+  object-fit: contain;
+  object-position: center;
+  transform: none !important;
+}
+
+.hero-tile-tradition img {
+  object-position: center 48%;
+}
+
+.hero-tile-hospitality img {
+  object-position: center 44%;
+}
+
+.hero-tile-community img {
+  object-position: center 38%;
+}
+
+/* Business cards: avoid cutting logos, architecture and group overview graphics. */
+.card-visual.real-estate {
+  background: #f6f8fb;
+}
+
+.card-visual.real-estate .business-photo {
+  object-fit: contain;
+  object-position: center;
+}
+
+.card-visual.foundation {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(117,213,212,.22), transparent 34%),
+    linear-gradient(135deg, #0b1b31, #164b63);
+}
+
+.card-visual.foundation .business-photo {
+  display: none;
+}
+
+.card-visual.foundation .business-logo {
+  left: 50%;
+  bottom: 50%;
+  width: min(72%, 320px);
+  height: 120px;
+  transform: translate(-50%, 50%);
+  object-position: center;
+  padding: 18px 24px;
+}
+
+/* Project and hotel portfolio cards should show the full property/entrance whenever possible. */
+.portfolio-image {
+  background: #f5f8fa;
+}
+
+.portfolio-image img {
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+/* Large feature photography can remain immersive, but use safer focal positions. */
+.feature-image img {
+  object-position: center center;
+}
+
+.foundation-image img {
+  object-position: center 35%;
+}
+
+/* Leadership photography: protect faces and full portrait composition. */
+.leadership-feature-image {
+  background: #eef3f6;
+}
+
+.leadership-feature-image img {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.chairman-portrait {
+  background: #eef3f6;
+}
+
+.chairman-portrait > img {
+  object-fit: contain;
+  object-position: center top;
+}
+
+@media (max-width: 900px) {
+  .hero-tile-estate img {
+    object-fit: contain;
+  }
+
+  .leadership-feature-image img,
+  .chairman-portrait > img {
+    object-fit: contain;
+  }
+}
