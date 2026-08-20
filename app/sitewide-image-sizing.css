@@ -1,0 +1,124 @@
+/* Site-wide image sizing refinements. Keep full visual content readable without oversized sections. */
+
+/* Businesses page: project and hotel cards */
+.portfolio-image {
+  aspect-ratio: 16 / 8.4;
+  max-height: 300px;
+}
+
+.portfolio-image img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Brand structure/logo grids */
+.structure-logo {
+  min-height: 116px;
+}
+
+.structure-logo img {
+  height: 68px;
+}
+
+.portfolio-company-logo {
+  width: min(240px, 70vw);
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* Feature businesses: Parampara and Foundation */
+.feature-business,
+.feature-business.reverse {
+  min-height: 440px;
+}
+
+.feature-image {
+  min-height: 400px;
+  max-height: 460px;
+}
+
+.feature-image img {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #eef2f5;
+}
+
+.feature-copy > img {
+  width: min(220px, 65vw);
+  height: 96px;
+}
+
+/* Leadership page */
+.chairman-profile {
+  grid-template-columns: minmax(280px, 390px) 1fr;
+}
+
+.chairman-portrait {
+  max-width: 390px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.chairman-portrait > img {
+  object-fit: contain !important;
+  object-position: center top !important;
+  background: #eef3f6;
+}
+
+/* Homepage leadership visual already uses the same portrait asset. */
+.leadership-feature-image {
+  min-height: 560px;
+}
+
+.leadership-feature-image img {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+}
+
+@media (max-width: 900px) {
+  .portfolio-image {
+    max-height: 260px;
+  }
+
+  .feature-business,
+  .feature-business.reverse {
+    min-height: 0;
+  }
+
+  .feature-image {
+    min-height: 320px;
+    max-height: 380px;
+  }
+
+  .chairman-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .chairman-portrait {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-image {
+    aspect-ratio: 16 / 9;
+    max-height: 220px;
+  }
+
+  .structure-logo {
+    min-height: 100px;
+  }
+
+  .structure-logo img {
+    height: 58px;
+  }
+
+  .feature-image {
+    min-height: 260px;
+    max-height: 300px;
+  }
+
+  .chairman-portrait {
+    max-width: 310px;
+  }
+}
