@@ -1,0 +1,26 @@
+.visual {
+  background: #0b1423;
+  display: grid;
+  place-items: center;
+}
+
+.visual > img:first-child {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  background: #0b1423;
+}
+
+.visual::after {
+  background: linear-gradient(0deg, rgba(11,20,35,.42), transparent 48%) !important;
+}
+
+@media (max-width: 760px) {
+  .visual {
+    min-height: 260px !important;
+  }
+}
