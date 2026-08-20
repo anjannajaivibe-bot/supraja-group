@@ -54,42 +54,40 @@ export default function Home() {
   return (
     <main className={styles.home}>
       <section className={styles.hero}>
-        <div className={styles.heroCopy}>
-          <div>
-            <p className={styles.kicker}>Established 2003 · Hyderabad</p>
-            <h1>
-              <span>Building value.</span>
-              <span>Shaping</span>
-              <em>generations.</em>
-            </h1>
-          </div>
-
-          <div className={styles.heroBottom}>
-            <p className={styles.heroLead}>
-              A diversified group creating enduring value across real estate,
-              food and tradition, hospitality, and community development.
-            </p>
-            <div className={styles.heroActions}>
-              <Link className={styles.actionPrimary} href="/businesses">
-                Explore our businesses <span aria-hidden="true">↗</span>
-              </Link>
-              <Link className={styles.actionSecondary} href="/about">
-                Meet the group <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </div>
+        <div className={styles.heroMeta}>
+          <p className={styles.kicker}>Established 2003 · Hyderabad</p>
+          <span className={styles.heroIndex}>01 / GROUP</span>
         </div>
 
-        <div className={styles.heroVisual}>
-          <img
-            src="/images/Supraja Infracon Overview.webp"
-            alt="Sri Supraja Infracon overview featuring major real estate developments"
-            width={1600}
-            height={900}
-            loading="eager"
-          />
-          <span className={styles.heroIndex}>01 / GROUP</span>
-          <span className={styles.heroVertical}>Real estate · Hospitality · Food · Community</span>
+        <div className={styles.heroStatement}>
+          <h1>
+            <span>Building value.</span>
+            <span>Shaping</span>
+            <em>generations.</em>
+          </h1>
+        </div>
+
+        <div className={styles.heroBottom}>
+          <p className={styles.heroLead}>
+            A diversified group creating enduring value across real estate,
+            food and tradition, hospitality, and community development.
+          </p>
+
+          <div className={styles.heroSectors} aria-label="Supraja Group sectors">
+            <span>Real Estate</span>
+            <span>Hospitality</span>
+            <span>Food & Tradition</span>
+            <span>Community</span>
+          </div>
+
+          <div className={styles.heroActions}>
+            <Link className={styles.actionPrimary} href="/businesses">
+              Explore our businesses <span aria-hidden="true">↗</span>
+            </Link>
+            <Link className={styles.actionSecondary} href="/about">
+              Meet the group <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
