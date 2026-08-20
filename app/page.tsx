@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./home-editorial.module.css";
+import heroStyles from "./hero-editorial.module.css";
 
 const businesses = [
   {
@@ -53,13 +54,13 @@ const brands = [
 export default function Home() {
   return (
     <main className={styles.home}>
-      <section className={styles.hero}>
-        <div className={styles.heroMeta}>
-          <p className={styles.kicker}>Established 2003 · Hyderabad</p>
-          <span className={styles.heroIndex}>01 / GROUP</span>
+      <section className={heroStyles.hero}>
+        <div className={heroStyles.heroMeta}>
+          <p className={heroStyles.kicker}>Established 2003 · Hyderabad</p>
+          <span className={heroStyles.heroIndex}>01 / GROUP</span>
         </div>
 
-        <div className={styles.heroStatement}>
+        <div className={heroStyles.heroStatement}>
           <h1>
             <span>Building value.</span>
             <span>Shaping</span>
@@ -67,24 +68,24 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className={styles.heroBottom}>
-          <p className={styles.heroLead}>
+        <div className={heroStyles.heroBottom}>
+          <p className={heroStyles.heroLead}>
             A diversified group creating enduring value across real estate,
             food and tradition, hospitality, and community development.
           </p>
 
-          <div className={styles.heroSectors} aria-label="Supraja Group sectors">
+          <div className={heroStyles.heroSectors} aria-label="Supraja Group sectors">
             <span>Real Estate</span>
             <span>Hospitality</span>
             <span>Food & Tradition</span>
             <span>Community</span>
           </div>
 
-          <div className={styles.heroActions}>
-            <Link className={styles.actionPrimary} href="/businesses">
+          <div className={heroStyles.heroActions}>
+            <Link className={heroStyles.actionPrimary} href="/businesses">
               Explore our businesses <span aria-hidden="true">↗</span>
             </Link>
-            <Link className={styles.actionSecondary} href="/about">
+            <Link className={heroStyles.actionSecondary} href="/about">
               Meet the group <span aria-hidden="true">→</span>
             </Link>
           </div>
