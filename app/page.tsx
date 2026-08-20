@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./home-editorial.module.css";
 import heroStyles from "./hero-editorial.module.css";
 import imageStyles from "./business-image-editorial.module.css";
+import compactStyles from "./business-compact.module.css";
 
 const businesses = [
   {
@@ -88,10 +89,10 @@ export default function Home() {
       <section className={styles.businesses}>
         <div className={styles.businessesHeader}><p className={styles.sectionLabel}>03 / Our businesses</p><h2>One group. Four distinct expressions of trust.</h2></div>
         {businesses.map((business) => (
-          <article className={styles.businessRow} key={business.name}>
+          <article className={`${styles.businessRow} ${compactStyles.row}`} key={business.name}>
             <div className={styles.businessNumber}>{business.number}</div>
             <div className={styles.businessCopy}><p>{business.name}</p><h3>{business.company}</h3><p>{business.copy}</p><a className={styles.businessLink} href={business.href}>Explore business <span aria-hidden="true">↗</span></a></div>
-            <div className={`${styles.businessVisual} ${imageStyles.visual}`}><img src={business.image} alt={`${business.company} business`} loading="lazy" /><img className={styles.businessLogo} src={business.logo} alt={`${business.company} logo`} width={190} height={80} loading="lazy" /></div>
+            <div className={`${styles.businessVisual} ${imageStyles.visual} ${compactStyles.visual}`}><img src={business.image} alt={`${business.company} business`} loading="lazy" /><img className={styles.businessLogo} src={business.logo} alt={`${business.company} logo`} width={190} height={80} loading="lazy" /></div>
           </article>
         ))}
       </section>
