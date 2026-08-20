@@ -4,6 +4,7 @@ import "./globals.css";
 import "./image-overrides.css";
 import "./spacing-overrides.css";
 import "./editorial-shell.css";
+import "./sitewide-image-sizing.css";
 import { Footer, Header } from "./components";
 
 const geistSans = Geist({
