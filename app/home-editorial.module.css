@@ -267,6 +267,11 @@
   border-bottom: 1px solid rgba(255,255,255,.16);
 }
 
+.businessRowReverse {
+  grid-template-columns: minmax(0, 1.15fr) 96px minmax(250px, .85fr);
+  grid-template-areas: "visual number copy";
+}
+
 .businessNumber {
   grid-area: number;
   padding: 34px 24px;
@@ -462,6 +467,12 @@
       "number copy"
       "visual visual";
   }
+  .businessRowReverse {
+    grid-template-columns: 76px 1fr;
+    grid-template-areas:
+      "number copy"
+      "visual visual";
+  }
   .businessVisual { min-height: 360px; }
   .brandGrid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -493,6 +504,12 @@
       "number copy"
       "visual visual";
     min-height: 0;
+  }
+  .businessRowReverse {
+    grid-template-columns: 58px 1fr;
+    grid-template-areas:
+      "number copy"
+      "visual visual";
   }
   .businessNumber { padding: 28px 15px; }
   .businessCopy { padding: 34px 22px; }
