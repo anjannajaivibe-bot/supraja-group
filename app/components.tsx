@@ -19,13 +19,13 @@ export function Header() {
         <img
           className="brand-logo"
           src="/brand/supraja-group.webp"
-          alt="Supraja Group, 24 years of legacy"
+          alt="Supraja Group logo"
           width={210}
           height={90}
           loading="eager"
         />
       </Link>
-      <span className="header-legacy">24+ years of trust</span>
+      <span className="header-legacy">25+ years of legacy</span>
       <button
         className="menu-button"
         aria-label="Toggle navigation"
@@ -66,8 +66,8 @@ export function Footer() {
             />
           </Link>
           <p>
-            Building trusted businesses that create lasting value for people,
-            places and communities.
+            Building responsible businesses that create lasting value for
+            people and communities.
           </p>
         </div>
         <div>
@@ -80,8 +80,8 @@ export function Footer() {
           <h2>Connect</h2>
           <Link href="/contact">Contact Us</Link>
           <a href="tel:+919052996161">+91 90529 96161</a>
-          <a href="mailto:support@srisuprajainfracon.com">
-            support@srisuprajainfracon.com
+          <a href="mailto:info@srisuprajainfracon.com">
+            info@srisuprajainfracon.com
           </a>
         </div>
         <div>

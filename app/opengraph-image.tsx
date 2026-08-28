@@ -101,7 +101,7 @@ export default function OpenGraphImage() {
                 letterSpacing: -2.5,
               }}
             >
-              Building trusted businesses that create lasting value.
+              Building responsible businesses that create lasting value.
             </div>
           </div>
 
