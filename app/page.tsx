@@ -9,7 +9,7 @@ const businesses = [
     number: "01",
     name: "Real Estate",
     company: "Sri Supraja Infracon",
-    copy: "Thoughtfully planned communities and investment destinations across Hyderabad’s growth corridors.",
+    copy: "Planned communities and real estate developments across Hyderabad’s emerging growth corridors.",
     href: "https://www.srisuprajainfracon.com/",
     logo: "/brand/sri-supraja-infracon.webp",
     image: "/images/Supraja Infracon Overview.webp",
@@ -18,7 +18,7 @@ const businesses = [
     number: "02",
     name: "Food & Tradition",
     company: "Parampara",
-    copy: "Celebrating authentic taste, trusted quality and the traditions that bring people together.",
+    copy: "Preserving authentic flavours and food traditions that bring people together.",
     href: "https://www.paramparamithai.com/",
     logo: "/brand/parampara.webp",
     image: "/images/portfolio/parampara-mithai.webp",
@@ -27,7 +27,7 @@ const businesses = [
     number: "03",
     name: "Hospitality",
     company: "Supraja Hotels",
-    copy: "Comfortable stays, warm service and dependable hospitality across Hyderabad.",
+    copy: "Comfortable stays and attentive hospitality across Hyderabad.",
     href: "https://suprajahotels.com/",
     logo: "/brand/supraja-hotels.webp",
     image: "/images/portfolio/cyber-view.webp",
@@ -58,14 +58,14 @@ export default function Home() {
     <main className={styles.home}>
       <section className={heroStyles.hero}>
         <div className={heroStyles.heroMeta}>
-          <p className={heroStyles.kicker}>Established 2003 · Hyderabad</p>
+          <p className={heroStyles.kicker}>Established 2001 · Hyderabad</p>
           <span className={heroStyles.heroIndex}>01 / GROUP</span>
         </div>
         <div className={heroStyles.heroStatement}>
           <h1><span>Building value.</span><span>Shaping</span><em>generations.</em></h1>
         </div>
         <div className={heroStyles.heroBottom}>
-          <p className={heroStyles.heroLead}>A diversified group creating enduring value across real estate, food and tradition, hospitality, and community development.</p>
+          <p className={heroStyles.heroLead}>A diversified business group creating lasting value across real estate, traditional food, hospitality, and community development.</p>
           <div className={heroStyles.heroSectors} aria-label="Supraja Group sectors"><span>Real Estate</span><span>Hospitality</span><span>Food & Tradition</span><span>Community</span></div>
           <div className={heroStyles.heroActions}>
             <Link className={heroStyles.actionPrimary} href="/businesses">Explore our businesses <span aria-hidden="true">↗</span></Link>
@@ -75,19 +75,19 @@ export default function Home() {
       </section>
 
       <section className={styles.metrics} aria-label="Supraja Group at a glance">
-        <div className={styles.metric}><strong>24+</strong><span className={styles.metricLabel}>Years of legacy</span></div>
+        <div className={styles.metric}><strong>25+</strong><span className={styles.metricLabel}>Years of legacy</span></div>
         <div className={styles.metric}><strong>10,000+</strong><span className={styles.metricLabel}>Families served</span></div>
         <div className={styles.metric}><strong>10+</strong><span className={styles.metricLabel}>Completed developments</span></div>
         <div className={styles.metric}><strong>4</strong><span className={styles.metricLabel}>Core business sectors</span></div>
       </section>
 
       <section className={styles.intro}>
-        <div><p className={styles.sectionLabel}>02 / One vision, multiple ventures</p><h2>A diversified group built on trust and thoughtful growth.</h2></div>
-        <div className={styles.introCopy}><p>Since 2003, Supraja Group has grown through dependable execution, enduring relationships and a genuine commitment to value. Each venture serves a distinct need while carrying the same promise: transparent service, responsible growth and trust that lasts.</p><Link className={styles.textLink} href="/about">Discover our journey <span aria-hidden="true">↗</span></Link></div>
+        <div><p className={styles.sectionLabel}>02 / One vision, multiple ventures</p><h2>A diversified group built on responsibility and steady growth.</h2></div>
+        <div className={styles.introCopy}><p>Since 2001, Supraja Group has grown through responsible execution, lasting relationships, and a clear commitment to creating value. Each business serves a distinct purpose while reflecting the same principles: transparency, responsibility, and long-term value.</p><Link className={styles.textLink} href="/about">Discover our journey <span aria-hidden="true">↗</span></Link></div>
       </section>
 
       <section className={styles.businesses}>
-        <div className={styles.businessesHeader}><p className={styles.sectionLabel}>03 / Our businesses</p><h2>One group. Four distinct expressions of trust.</h2></div>
+        <div className={styles.businessesHeader}><p className={styles.sectionLabel}>03 / Our businesses</p><h2>One group. Four distinct areas of impact.</h2></div>
         {businesses.map((business, index) => (
           <article className={`${styles.businessRow} ${index % 2 === 1 ? styles.businessRowReverse : ""} ${compactStyles.row}`} key={business.name}>
             <div className={styles.businessNumber}>{business.number}</div>
@@ -99,22 +99,22 @@ export default function Home() {
 
       <section className={styles.leadership}>
         <div className={styles.leadershipImage}><img src="/images/tudi-praveen.webp" alt="Tudi Praveen, Chairman and Managing Director of Supraja Group" width={720} height={900} loading="lazy" /></div>
-        <div className={styles.leadershipCopy}><p className={styles.sectionLabel}>04 / Leadership</p><blockquote>“Trust is the foundation of every successful enterprise.”</blockquote><p>Tudi Praveen leads Supraja Group with a long-term perspective, disciplined execution and an unwavering commitment to customers and communities.</p><Link className={styles.textLink} href="/leadership">Read the Chairman&apos;s message <span aria-hidden="true">↗</span></Link></div>
+        <div className={styles.leadershipCopy}><p className={styles.sectionLabel}>04 / Leadership</p><blockquote>“Trust is the foundation of every enduring enterprise.”</blockquote><p>Tudi Praveen leads Supraja Group with a long-term perspective, disciplined execution, and a strong commitment to customers and communities.</p><Link className={styles.textLink} href="/leadership">Read the Chairman&apos;s message <span aria-hidden="true">↗</span></Link></div>
       </section>
 
       <section className={styles.brands}>
-        <div className={styles.brandsHead}><p className={styles.sectionLabel}>05 / Brand family</p><div><h2>Trusted identities under one group.</h2><p className={styles.brandLabel}>Distinct businesses. One shared commitment to trust, quality and responsible growth.</p></div></div>
+        <div className={styles.brandsHead}><p className={styles.sectionLabel}>05 / Brand family</p><div><h2>Distinct identities. One shared vision.</h2><p className={styles.brandLabel}>Distinct businesses united by a shared commitment to responsibility, quality, and lasting value.</p></div></div>
         <div className={styles.brandGrid}>{brands.map(([src, alt]) => (<div className={styles.brandTile} key={alt}><img src={src} alt={`${alt} logo`} width={260} height={120} loading="lazy" /></div>))}</div>
       </section>
 
       <section className={styles.purpose}>
-        <div><p className={styles.sectionLabel}>06 / Purpose beyond business</p><h2>Progress becomes meaningful when it improves lives.</h2></div>
+        <div><p className={styles.sectionLabel}>06 / Purpose beyond business</p><h2>Progress matters most when it improves lives.</h2></div>
         <div className={styles.purposePoints}><div className={styles.purposePoint}><strong>People</strong><span>Supporting opportunity</span></div><div className={styles.purposePoint}><strong>Places</strong><span>Creating lasting value</span></div><div className={styles.purposePoint}><strong>Future</strong><span>Growing responsibly</span></div></div>
       </section>
 
       <section className={styles.contact}>
         <div><p className={styles.sectionLabel}>07 / Connect with Supraja Group</p><h2>Let’s build something meaningful together.</h2></div>
-        <div className={styles.contactCopy}><p>Talk to our team about partnerships, business enquiries or opportunities across the group.</p><Link className={styles.contactLink} href="/contact">Contact the group <span aria-hidden="true">↗</span></Link></div>
+        <div className={styles.contactCopy}><p>Connect with our team to discuss partnerships, business enquiries, and opportunities across Supraja Group.</p><Link className={styles.contactLink} href="/contact">Contact the group <span aria-hidden="true">↗</span></Link></div>
       </section>
     </main>
   );
