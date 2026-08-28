@@ -272,6 +272,12 @@
   grid-template-areas: "visual number copy";
 }
 
+.businessRowReverse .businessLogo {
+  right: 24px;
+  left: auto;
+  object-position: right center;
+}
+
 .businessNumber {
   grid-area: number;
   padding: 34px 24px;
@@ -472,6 +478,11 @@
     grid-template-areas:
       "number copy"
       "visual visual";
+  }
+  .businessRowReverse .businessLogo {
+    right: auto;
+    left: 24px;
+    object-position: left center;
   }
   .businessVisual { min-height: 360px; }
   .brandGrid { grid-template-columns: repeat(3, 1fr); }
