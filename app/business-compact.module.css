@@ -1,10 +1,10 @@
 .row {
-  min-height: 340px !important;
+  min-height: 320px !important;
 }
 
 .visual {
-  min-height: 340px !important;
-  height: clamp(280px, 24vw, 360px) !important;
+  min-height: 320px !important;
+  height: clamp(270px, 22vw, 330px) !important;
   align-self: center;
   overflow: hidden;
 }

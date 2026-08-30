@@ -15,7 +15,7 @@ const geistSans = Geist({
 const siteUrl = "https://suprajagroup.com";
 const siteTitle = "Supraja Group | Progress with Purpose";
 const siteDescription =
-  "Supraja Group builds trusted businesses across real estate, hospitality, food and tradition, and community development.";
+  "Supraja Group builds responsible businesses across real estate, hospitality, traditional food, and community development.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteTitle,
     description:
-      "Building trusted businesses that create lasting value for people, places and communities.",
+      "Building responsible businesses that create lasting value for people and communities.",
     url: siteUrl,
     type: "website",
     siteName: "Supraja Group",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description:
-      "Building trusted businesses that create lasting value for people, places and communities.",
+      "Building responsible businesses that create lasting value for people and communities.",
     images: ["/opengraph-image"],
   },
   icons: {
@@ -75,7 +75,7 @@ export default function RootLayout({
           url: `${siteUrl}/brand/supraja-group.webp`,
         },
         description: siteDescription,
-        foundingDate: "2003",
+        foundingDate: "2001",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Hyderabad",

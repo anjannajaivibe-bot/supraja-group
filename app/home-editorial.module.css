@@ -262,17 +262,31 @@
 .businessRow {
   display: grid;
   grid-template-columns: 96px minmax(250px, .85fr) minmax(0, 1.15fr);
+  grid-template-areas: "number copy visual";
   min-height: 430px;
   border-bottom: 1px solid rgba(255,255,255,.16);
 }
 
+.businessRowReverse {
+  grid-template-columns: minmax(0, 1.15fr) 96px minmax(250px, .85fr);
+  grid-template-areas: "visual number copy";
+}
+
+.businessRowReverse .businessLogo {
+  right: 24px;
+  left: auto;
+  object-position: right center;
+}
+
 .businessNumber {
+  grid-area: number;
   padding: 34px 24px;
   color: #88a8ff;
   border-right: 1px solid rgba(255,255,255,.16);
 }
 
 .businessCopy {
+  grid-area: copy;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,6 +317,7 @@
 }
 
 .businessVisual {
+  grid-area: visual;
   position: relative;
   min-height: 430px;
   overflow: hidden;
@@ -452,8 +467,24 @@
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .metric:nth-child(2) { border-right: 0; }
   .metric:nth-child(-n+2) { border-bottom: 1px solid var(--editorial-line); }
-  .businessRow { grid-template-columns: 76px 1fr; }
-  .businessVisual { grid-column: 1 / -1; min-height: 360px; }
+  .businessRow {
+    grid-template-columns: 76px 1fr;
+    grid-template-areas:
+      "number copy"
+      "visual visual";
+  }
+  .businessRowReverse {
+    grid-template-columns: 76px 1fr;
+    grid-template-areas:
+      "number copy"
+      "visual visual";
+  }
+  .businessRowReverse .businessLogo {
+    right: auto;
+    left: 24px;
+    object-position: left center;
+  }
+  .businessVisual { min-height: 360px; }
   .brandGrid { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -478,7 +509,19 @@
   .purpose,
   .contact { padding: 58px 22px; }
   .businessesHeader { padding: 58px 22px 38px; }
-  .businessRow { grid-template-columns: 58px 1fr; min-height: 0; }
+  .businessRow {
+    grid-template-columns: 58px 1fr;
+    grid-template-areas:
+      "number copy"
+      "visual visual";
+    min-height: 0;
+  }
+  .businessRowReverse {
+    grid-template-columns: 58px 1fr;
+    grid-template-areas:
+      "number copy"
+      "visual visual";
+  }
   .businessNumber { padding: 28px 15px; }
   .businessCopy { padding: 34px 22px; }
   .businessVisual { min-height: 300px; }

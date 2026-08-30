@@ -12,7 +12,7 @@ const projects = [
     name: "Supraja IRIS",
     location: "Kamkole, near Sadashivapet",
     description:
-      "A resort-style plotted destination by Sri Supraja Infracon with lifestyle attractions and strong growth-corridor connectivity.",
+      "A resort-style plotted development with planned lifestyle attractions and connectivity to the Hyderabad-Zaheerabad growth corridor.",
     image: "/images/portfolio/supraja-iris.webp",
     href: "https://suprajairis.com/",
   },
@@ -20,7 +20,7 @@ const projects = [
     name: "Bridge County",
     location: "Within Supraja IRIS",
     description:
-      "A serene premium plotted enclave adjacent to Woxsen University within the larger Supraja IRIS ecosystem.",
+      "A plotted enclave adjacent to Woxsen University within the larger Supraja IRIS development.",
     image: "/images/portfolio/bridge-county.webp",
     href: "https://www.srisuprajainfracon.com/projects/bridge-county",
   },
@@ -28,7 +28,7 @@ const projects = [
     name: "Sindhu Sarovar",
     location: "Mominpet",
     description:
-      "A DTCP and RERA approved gated plotted community with wide roads and planned infrastructure.",
+      "A DTCP- and RERA-approved gated plotted community with wide roads and planned infrastructure.",
     image: "/images/portfolio/sindhu-sarovar.webp",
     href: "https://www.srisuprajainfracon.com/projects/sindhu-sarovar",
   },
@@ -36,7 +36,7 @@ const projects = [
     name: "Subhash Meadows",
     location: "Indrakaran",
     description:
-      "Affordable open plots near Hyderabad’s growth corridors in a calm, well-connected setting.",
+      "Open plots in Indrakaran with access to Hyderabad’s surrounding growth corridors.",
     image: "/images/portfolio/subhash-meadows.webp",
     href: "https://www.srisuprajainfracon.com/projects/subhash-meadows",
   },
@@ -47,7 +47,7 @@ const hotels = [
     name: "Hotel Supraja Cyber View",
     location: "Madhapur, Hitech City",
     description:
-      "A convenient business stay near Hyderabad’s leading technology and commercial hubs.",
+      "A convenient stay in Madhapur with access to nearby technology and commercial areas.",
     image: "/images/portfolio/cyber-view.webp",
     href: "https://suprajahotels.com/hotels/supraja-cyber-view",
   },
@@ -55,7 +55,7 @@ const hotels = [
     name: "Hotel Supraja Residency",
     location: "Chandanagar",
     description:
-      "Comfortable rooms, dependable service and convenient access for families and business travellers.",
+      "Comfortable rooms and convenient access for families and business travellers.",
     image: "/images/portfolio/supraja-residency.webp",
     href: "https://suprajahotels.com/hotels/supraja-residency",
   },
@@ -63,7 +63,7 @@ const hotels = [
     name: "Hotel Supraja Lodge",
     location: "Chandanagar",
     description:
-      "A practical and welcoming stay designed around comfort, value and essential convenience.",
+      "A practical stay in Chandanagar offering essential comfort and convenience.",
     image: "/images/portfolio/supraja-lodge.webp",
     href: "https://suprajahotels.com/hotels/supraja-lodge",
   },
@@ -71,7 +71,7 @@ const hotels = [
     name: "Saket Banquet Hall",
     location: "Hotel Supraja Residency",
     description:
-      "An elegant venue for family celebrations, corporate gatherings and memorable occasions.",
+      "A venue for family celebrations, corporate gatherings, and other occasions.",
     image: "/images/portfolio/saket-banquet.webp",
     href: "https://suprajahotels.com/saket-banquet-hall",
   },
@@ -89,7 +89,7 @@ function PortfolioCard({
       <a className="portfolio-image" href={item.href} aria-label={`Explore ${item.name}`}>
         <img
           src={item.image}
-          alt={`${item.name} official website image`}
+          alt={`${item.name} ${label.toLowerCase()} property`}
           loading="lazy"
         />
       </a>
@@ -111,7 +111,7 @@ export default function BusinessesPage() {
       <PageHero
         eyebrow="Our Businesses"
         title="Distinct ventures. One shared standard."
-        copy="Explore the companies, projects, hotels and community initiatives that form the Supraja Group."
+        copy="Explore the real estate, traditional food, hospitality, and community initiatives within Supraja Group."
       />
 
       <section className="group-structure" aria-label="Supraja Group brand structure">
@@ -145,7 +145,7 @@ export default function BusinessesPage() {
               height={115}
               loading="lazy"
             />
-            <h2>Projects positioned for long-term value.</h2>
+            <h2>Plotted developments across emerging growth corridors.</h2>
           </div>
           <div>
             <p>
@@ -182,11 +182,10 @@ export default function BusinessesPage() {
               loading="lazy"
             />
             <p className="eyebrow">Food & Tradition</p>
-            <h2>Authentic taste, crafted for every celebration.</h2>
+            <h2>Traditional flavours for everyday moments and celebrations.</h2>
             <p>
-              Parampara brings together traditional Indian sweets, premium
-              mithai, namkeens, cakes and gift hampers with a commitment to
-              freshness and trusted quality.
+              Parampara offers traditional Indian sweets, mithai, namkeens,
+              cakes, and gift hampers for everyday occasions and celebrations.
             </p>
             <a className="button primary" href="https://www.paramparamithai.com/">
               Visit Parampara Mithai
@@ -210,8 +209,8 @@ export default function BusinessesPage() {
           </div>
           <div>
             <p>
-              Supraja Hotels combines convenient locations, warm service and
-              dependable value for business travellers, families and events.
+              Supraja Hotels offers conveniently located accommodation for
+              business travellers, families, and guests attending events.
             </p>
             <a className="button secondary" href="https://suprajahotels.com/">
               Visit Supraja Hotels
@@ -246,9 +245,8 @@ export default function BusinessesPage() {
             <p className="eyebrow">Community Impact</p>
             <h2>Progress that strengthens communities.</h2>
             <p>
-              Supraja Foundation supports purpose-led initiatives designed to
-              help people, expand opportunity and contribute to stronger
-              communities.
+              Supraja Foundation supports initiatives intended to expand
+              opportunity and contribute to stronger communities.
             </p>
             <a className="button secondary" href="/contact">
               Connect with the Foundation

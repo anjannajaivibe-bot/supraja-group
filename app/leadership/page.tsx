@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Leadership | Tudi Praveen, Chairman of Supraja Group",
   description:
-    "Meet Tudi Praveen, Chairman and Managing Director of Supraja Group, and discover the vision of trust, integrity and responsible growth guiding the group.",
+    "Meet Tudi Praveen, Chairman and Managing Director of Supraja Group, and learn about the principles guiding its businesses.",
 };
 
 export default function LeadershipPage() {
@@ -16,11 +16,11 @@ export default function LeadershipPage() {
           <h1>Building enduring value through trust and purpose.</h1>
           <p>
             A long-term vision for responsible enterprises, meaningful
-            partnerships and progress that benefits generations.
+            partnerships, and progress that can benefit future generations.
           </p>
         </div>
         <div className="leadership-hero-mark" aria-hidden="true">
-          <span>24+</span>
+          <span>25+</span>
           <small>Years of legacy</small>
         </div>
       </section>
@@ -42,26 +42,26 @@ export default function LeadershipPage() {
           <div className="chairman-message">
             <p className="eyebrow">Chairman&apos;s Message</p>
             <blockquote>
-              “Over the past 24 years, our journey has been guided by a simple
-              belief: trust is the foundation of every successful enterprise.”
+              “For more than 25 years, our journey has been guided by a simple
+              belief: trust is the foundation of every enduring enterprise.”
             </blockquote>
             <div className="message-body">
               <p>
-                What began as a vision to create quality communities has grown
-                into a diversified group committed to shaping destinations,
-                experiences and opportunities that improve the way people live.
+                What began as a vision to create planned communities has grown
+                into a diversified group working across real estate,
+                traditional food, hospitality, and community initiatives.
               </p>
               <p>
                 We have had the privilege of contributing to the growth of
                 Hyderabad and Telangana through residential communities,
-                approved developments and large-scale ventures. Today, Supraja
-                IRIS, Bridge County, Sindhu Sarovar and Subhash Meadows
+                approved plotted developments, and larger ventures. Today,
+                Supraja IRIS, Bridge County, Sindhu Sarovar, and Subhash Meadows
                 represent the next chapter of that journey.
               </p>
               <p>
-                As we look ahead, our commitment remains unwavering: to uphold
-                the highest standards of integrity, transparency and customer
-                trust across every Supraja business.
+                As we look ahead, our commitment is to act with integrity,
+                communicate transparently, and serve customers responsibly
+                across every Supraja business.
               </p>
             </div>
             <div className="chairman-signoff">
@@ -80,24 +80,24 @@ export default function LeadershipPage() {
           </div>
           <p>
             The group&apos;s growth is measured not only by scale, but by the
-            confidence it earns from customers, partners and communities.
+            confidence it earns from customers, partners, and communities.
           </p>
         </div>
         <div className="principle-grid">
           <article>
             <span>01</span>
             <h3>Integrity First</h3>
-            <p>Clear commitments, responsible decisions and honest execution.</p>
+            <p>Clear commitments, responsible decisions, and honest execution.</p>
           </article>
           <article>
             <span>02</span>
             <h3>Long-Term Value</h3>
-            <p>Growth designed to remain meaningful for generations.</p>
+            <p>Decisions guided by sustainable, long-term value.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Customer Trust</h3>
-            <p>Every business relationship built on confidence and service.</p>
+            <h3>Customer Responsibility</h3>
+            <p>Clear communication and attentive service in every relationship.</p>
           </article>
         </div>
       </section>
